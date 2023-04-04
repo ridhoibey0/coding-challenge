@@ -1,17 +1,14 @@
-import { Box, Text } from "@chakra-ui/react";
 import React from "react";
-
+import { Box, Container, Text } from "@chakra-ui/react";
+import { Navbar } from "@/themes/components/Navbar";
+import { Hero } from "@/themes/components/Hero";
+import { Footer } from "@/themes/components/Footer";
 const Home = () => {
   return (
-    <Box
-      as="main"
-      bgColor="base"
-      h="100vh"
-      justifyContent="center"
-      alignItems="center"
-    >
-      <Text>Test</Text>
-    </Box>
+    <Container maxW="container.xl">
+      <Navbar />
+      <Hero />
+    </Container>
   );
 };
 
